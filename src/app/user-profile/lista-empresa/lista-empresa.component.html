@@ -1,0 +1,48 @@
+<div class="card">
+    <div class="card-header card-header-warning">
+        <h4 class="card-title">Lista de Empresa</h4>
+        <p class="card-category">Empresas do sistema</p>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table mat-table [dataSource]="empresas" matSort class="mat-elevation-z2">
+            <ng-container matColumnDef="idEmpresa">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> <strong>ID Empresa</strong> </th>
+              <td mat-cell *matCellDef="let empresa">  {{empresa.idEmpresa}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="nomeEmpresa">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> <strong>Nome Empresa</strong> </th>
+              <td mat-cell *matCellDef="let empresa"> {{empresa.nomeEmpresa}} </td>
+            </ng-container>
+          
+            <ng-container matColumnDef="dataCadastro">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> <strong>Data Cadastro</strong> </th>
+              <td mat-cell *matCellDef="let empresa"> 18/02/2021 </td>
+            </ng-container>
+
+            <ng-container matColumnDef="cnpjEmpresa">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> <strong>CNPJ</strong> </th>
+              <td mat-cell *matCellDef="let empresa"> {{empresa.cnpjEmpresa}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="acoesEmpresas" >
+                <th mat-header-cell *matHeaderCellDef> <strong>Ações</strong> </th>
+                <td mat-cell *matCellDef="let empresa"> 
+                    <div class="row" >
+                        <button mat-icon-button data-toggle="tooltip" title="Atualizar Empresa!" color="primary">
+                            <mat-icon>visibility</mat-icon>
+                        </button>
+                        <button mat-icon-button data-toggle="tooltip" title="Deletar Empresa!" (click)="openDialog(user.idUsuario)" color="warn">
+                            <mat-icon>delete_forever</mat-icon>
+                        </button>
+                    </div>
+                </td>
+            </ng-container>
+          
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+    </div>
+    </div>
+</div>

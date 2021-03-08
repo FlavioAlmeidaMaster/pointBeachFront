@@ -1,0 +1,79 @@
+<div class="row">
+<div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="card card-stats">
+        <div class="card-header card-header-warning card-header-icon">
+            <div class="card-icon">
+                <i class="material-icons">manage_accounts</i>
+            </div>
+            <p class="card-category">Cadastro Usuarios</p>
+            <h3 class="card-title">
+               {{quantidadeUser}}
+                <small>Usuários</small>
+            </h3>
+        </div>
+        <div class="card-footer">
+            <div class="stats">
+                <a class="btn btn-warning btn-round" routerLink="./listarUsuario" routerLinkActive="active">Listar</a>
+                <a class="btn btn-success btn-round" routerLink="./cadastroUsuario" routerLinkActive="active">Cadastrar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="card card-stats">
+        <div class="card-header card-header-success card-header-icon">
+            <div class="card-icon">
+                <i class="material-icons">3p</i>
+            </div>
+            <p class="card-category">Cadastro Clientes</p>
+            <h3 class="card-title">01
+                <small>Clientes</small>
+            </h3>
+        </div>
+        <div class="card-footer">
+            <div class="stats">
+                <a routerLink="./listarCliente" routerLinkActive="active" class="btn btn-warning btn-round">Listar</a>
+                <a routerLink="./cadastrarCliente" routerLinkActive="active" class="btn btn-success btn-round">Cadastrar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="card card-stats">
+        <div class="card-header card-header-danger card-header-icon">
+            <div class="card-icon">
+                <i class="material-icons">local_grocery_store</i>
+            </div>
+            <p class="card-category">Cadastro Produto</p>
+            <h3 class="card-title">01
+                <small>Produtos</small>
+            </h3>
+        </div>
+        <div class="card-footer">
+            <div class="stats">
+                <a routerLink="./listarProduto" routerLinkActive="active" class="btn btn-warning btn-round">Listar</a>
+                <a routerLink="./cadastroProduto" routerLinkActive="active" class="btn btn-success btn-round">Cadastrar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="card card-stats">
+        <div class="card-header card-header-info card-header-icon">
+            <div class="card-icon">
+                <i class="material-icons">location_city</i>
+            </div>
+            <p class="card-category">Cadastro Empresa</p>
+            <h3 class="card-title">  {{quantidadeWork}}
+                <small>Empresas</small>
+            </h3>
+        </div>
+        <div class="card-footer">
+            <div class="stats">
+                <a routerLink="./listarEmpresa" routerLinkActive="active" class="btn btn-warning btn-round">Listar</a>
+                <a routerLink="./cadastroEmpresa" routerLinkActive="active" class="btn btn-success btn-round">Cadastrar</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

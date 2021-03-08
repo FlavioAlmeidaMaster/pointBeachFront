@@ -1,0 +1,17 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <app-painel-controle [quantidadeUser]="quantidadeUsuario" [quantidadeWork]="quantidadeEmpresa"></app-painel-controle>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10">
+        <router-outlet></router-outlet>
+      </div>
+      <div class="col-md-2">
+        <app-painel-empresa></app-painel-empresa>
+        </div>
+    </div>
+    </div>
+</div>

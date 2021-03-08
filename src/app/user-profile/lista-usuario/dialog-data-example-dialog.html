@@ -1,0 +1,9 @@
+<h2 mat-dialog-title ><strong>Deletar cadastro!</strong></h2>
+<div mat-dialog-content>
+    Deseja realmente deletar este usuário!
+</div>
+<br/>
+<div mat-dialog-actions>
+        <button mat-button mat-dialog-close class="btn btn-warning btn-round" (click)="onNoClick()">Cancelar</button>
+        <button mat-button class="btn btn-success btn-round" mat-dialog-close  (click)=" deleteUsuario(data.usuarioDelConfirma)">Confirmar</button>
+</div>
